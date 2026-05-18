@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "project_folder": "/Users/joshuadavis/startups/lagrangeos",
+  "startup_name": "LagrangeOS",
+  "last_updated": "2026-05-11T07:39:00.000Z",
+  "status": "ready",
+  "build_status": {
+    "pnpm_install": "success",
+    "lint": "unknown",
+    "typecheck": "success",
+    "build": "success",
+    "last_error": ""
+  },
+  "deploy_status": {
+    "vercel_ready": false,
+    "last_deployed": "",
+    "deployment_url": "",
+    "manual_deploy_command": "cd /Users/joshuadavis/startups/lagrangeos && pnpm install && pnpm build && vercel --prod"
+  },
+  "disk_status": {
+    "size_before": "447M",
+    "size_after": "532K",
+    "cleanup_performed": true,
+    "large_files_flagged": [
+      {
+        "path": "node_modules/.pnpm/@next+swc-darwin-arm64@16.2.6/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node",
+        "size": "116.1 MiB",
+        "note": "Safe artifact in node_modules; removed during safe cleanup."
+      }
+    ]
+  },
+  "recent_changes": [
+    "Scaffolded Next.js App Router + TypeScript + Tailwind (pnpm).",
+    "Implemented premium LagrangeOS homepage with required sections and product-truth disclaimers.",
+    "Added Autobuilder foundation artifacts and guardrails.",
+    "Aligned PostCSS config filename to postcss.config.js."
+  ],
+  "open_issues": [
+    "Replace placeholder pilot email when a real contact channel is chosen."
+  ],
+  "next_actions": [
+    "validate build",
+    "add interactive mission sandbox",
+    "add pilot request page",
+    "add investor page",
+    "add technical benchmark section",
+    "add structured content data file",
+    "improve SEO",
+    "run safe disk cleanup after build"
+  ],
+  "last_agent_notes": "Maintain product truth: decision support/validation infra only; no flight-certified or spacecraft-control claims. Keep deps minimal and pnpm-only."
+}

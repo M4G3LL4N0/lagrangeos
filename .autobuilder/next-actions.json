@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "project_folder": "/Users/joshuadavis/startups/lagrangeos",
+  "startup_name": "LagrangeOS",
+  "tasks": [
+    {
+      "id": "validate-build",
+      "title": "Validate build",
+      "type": "quality",
+      "priority": "p0",
+      "status": "pending",
+      "notes": "Run pnpm install, pnpm typecheck, pnpm build. Fix all errors before any new feature work."
+    },
+    {
+      "id": "interactive-mission-sandbox",
+      "title": "Add interactive mission sandbox (client-only)",
+      "type": "product",
+      "priority": "p1",
+      "status": "pending",
+      "notes": "Add a lightweight interactive visual with scenario presets; avoid any implication of spacecraft control."
+    },
+    {
+      "id": "pilot-request-page",
+      "title": "Add a pilot request page",
+      "type": "growth",
+      "priority": "p1",
+      "status": "pending",
+      "notes": "Create a dedicated /pilot route with clear scope, guardrails, and contact workflow."
+    },
+    {
+      "id": "investor-page",
+      "title": "Add an investor page",
+      "type": "growth",
+      "priority": "p2",
+      "status": "pending",
+      "notes": "Create /investor with crisp positioning, market pull, and technical credibility. Keep product truth strict."
+    },
+    {
+      "id": "technical-benchmarks",
+      "title": "Add technical benchmark section",
+      "type": "credibility",
+      "priority": "p2",
+      "status": "pending",
+      "notes": "Add methodology-first benchmarks and disclaimers; avoid fake performance/flight claims."
+    },
+    {
+      "id": "structured-content",
+      "title": "Add structured content data file",
+      "type": "foundation",
+      "priority": "p1",
+      "status": "pending",
+      "notes": "Move homepage copy/features/use-cases into a structured TS/JSON file for maintainability."
+    },
+    {
+      "id": "seo-improvements",
+      "title": "Improve SEO",
+      "type": "quality",
+      "priority": "p1",
+      "status": "pending",
+      "notes": "Add OpenGraph metadata, canonical URL when domain exists, and consider sitemap/robots if needed."
+    },
+    {
+      "id": "safe-disk-cleanup",
+      "title": "Run safe disk cleanup after build validation",
+      "type": "ops",
+      "priority": "p2",
+      "status": "pending",
+      "notes": "After successful build, remove node_modules and build artifacts per cleanup policy; preserve src/public/config/.autobuilder."
+    }
+  ]
+}

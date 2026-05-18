@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "project_folder": "/Users/joshuadavis/startups/lagrangeos",
+  "startup_name": "LagrangeOS",
+  "aliases": ["AstroDyn AI", "DeltaV Labs", "Apsis Labs", "Ephemeris"],
+  "domain": "",
+  "category": "AI astrodynamics and space autonomy infrastructure",
+  "stage": "mvp",
+  "one_line_description": "AI-native astrodynamics and autonomy infrastructure for mission design, trajectory optimization, simulation, rendezvous planning, and orbital decision-making.",
+  "target_users": [
+    "Commercial space startups",
+    "Satellite operators",
+    "In-space servicing and docking companies",
+    "Cislunar logistics teams",
+    "Deep-space mission teams",
+    "Aerospace research labs",
+    "University space programs",
+    "Defense contractors",
+    "Technical founders building space infrastructure"
+  ],
+  "core_problem": "Astrodynamics workflows are slow, manual, fragmented, expensive, and hard to validate under uncertainty. Teams rely on bespoke scripts and brittle pipelines, trade studies take too long, and simulation outputs often fail to translate into decision-ready maneuver strategies and autonomy validation evidence.",
+  "core_solution": "A physics-first AI mission engine that helps teams define mission constraints, generate candidate trajectories and maneuver plans, simulate uncertainty, stress-test autonomy logic, rank options across delta-v/time/robustness/observability/safety/recoverability, and export human-approvable mission decision intelligence.",
+  "differentiation": "LagrangeOS focuses on decision intelligence, not generic \"AI for space math.\" AI proposes candidates and rationale; physics and constraints bound feasibility; simulation provides robustness evidence; outputs are ranked and packaged for human approval and repeatable validation.",
+  "mvp_scope": {
+    "primary_goal": "Deliver a premium, investor-ready, demo-ready website that communicates LagrangeOS as a credible AI-native astrodynamics and autonomy infrastructure startup and provides a durable foundation for iterative product build-out.",
+    "included_features": [
+      "Premium homepage with mission-engine narrative and technical credibility guardrails",
+      "Clear positioning: experimental astrodynamics accelerated by AI",
+      "Platform features and use cases sections (trajectory generation, optimization, uncertainty simulation, RPO, OD intelligence, autonomy validation, mission memory, cislunar, small-body)",
+      "Autobuilder foundation files (.autobuilder/*) to guide safe iteration"
+    ],
+    "excluded_for_now": [
+      "Authentication",
+      "Database",
+      "API routes / public API",
+      "Claims of real-time spacecraft control",
+      "Flight-certified claims"
+    ],
+    "future_features": [
+      "Interactive mission sandbox",
+      "Trajectory ranking engine",
+      "Orbit determination intelligence module",
+      "Rendezvous and proximity operations planner",
+      "Cislunar transfer planner",
+      "Small-body asteroid/comet navigation toolkit",
+      "Autonomy validation cloud",
+      "Secure enterprise/defense deployment options",
+      "Mission memory database",
+      "API layer for space software stacks"
+    ]
+  },
+  "website": {
+    "primary_message": "Experimental astrodynamics, accelerated by AI.",
+    "tone": "Premium venture-grade frontier space technology: cinematic dark, technical, confident, precise, and honest about validation.",
+    "routes": ["/"],
+    "sections": [
+      "Premium nav",
+      "Hero",
+      "Mission sandbox visual",
+      "Stats row",
+      "Problem",
+      "Solution",
+      "Platform features",
+      "Use cases",
+      "Mission engine workflow",
+      "Product demo section",
+      "Technical credibility section",
+      "Business model / buyer section",
+      "Roadmap",
+      "CTA",
+      "Footer"
+    ],
+    "cta": "Request a pilot",
+    "seo_keywords": [
+      "AI astrodynamics",
+      "mission design software",
+      "trajectory optimization",
+      "orbital mechanics",
+      "space autonomy",
+      "rendezvous proximity operations",
+      "cislunar logistics",
+      "spacecraft simulation"
+    ]
+  },
+  "product": {
+    "core_flows": [
+      "Define mission constraints (orbits, timelines, safety, thrust, sensing, comms)",
+      "Generate candidate trajectories and maneuver sequences",
+      "Simulate uncertainty (dispersions, measurement noise, control errors, fault cases)",
+      "Rank strategies by delta-v/time/robustness/observability/safety/recoverability",
+      "Export decision intelligence artifacts for human approval and review"
+    ],
+    "demo_flows": [
+      "Homepage mission sandbox visual + ranked strategy preview",
+      "Narrative workflow: constraints → candidates → simulation → ranking → export"
+    ],
+    "data_model_notes": [
+      "Scenarios should be represented as structured constraints + initial/final states + environmental model choices.",
+      "Ranking outputs should preserve assumptions, constraints, and scoring weights for traceability.",
+      "Simulation runs should store dispersion parameters and summary robustness metrics rather than raw trajectories by default."
+    ],
+    "auth_required": false,
+    "database_required": false,
+    "api_required": false
+  },
+  "design_system": {
+    "visual_style": "Dark cinematic, glassy panels, subtle glow, orbital/trajectory visuals, clean grid, luxury technical campaign aesthetic.",
+    "colors": [
+      "Background: #05070b",
+      "Foreground: zinc-50",
+      "Accent cyan: #30D5FF",
+      "Accent violet: #8B5CF6",
+      "Accent yellow: #FFD54A",
+      "Surfaces: white/5 with white/10 borders"
+    ],
+    "typography": "Geist Sans + Geist Mono (next/font/google). Compact headings, high-contrast body, restrained uppercase micro-labels.",
+    "layout_principles": [
+      "Mobile-first, responsive grid",
+      "High whitespace, no clutter",
+      "Content density increases with screen size",
+      "Use glass panels for hierarchy and readability on dark backgrounds"
+    ],
+    "animation_style": "Minimal motion; use subtle hover brightness and glow. Avoid heavy parallax and gimmicky sci-fi motion.",
+    "avoid": [
+      "Cheap sci-fi textures and stock imagery",
+      "Generic SaaS hero layouts",
+      "Overclaiming operational capability",
+      "Overusing neon and excessive gradients",
+      "Dense walls of text without hierarchy"
+    ]
+  },
+  "technical_stack": {
+    "framework": "Next.js",
+    "language": "TypeScript",
+    "styling": "Tailwind CSS",
+    "package_manager": "pnpm",
+    "deployment": "Vercel",
+    "database": "",
+    "auth": "",
+    "apis": []
+  },
+  "important_files": {
+    "routes": ["src/app/page.tsx", "src/app/layout.tsx"],
+    "components": [],
+    "lib": [],
+    "data": [],
+    "public_assets": [],
+    "config": [
+      "package.json",
+      "next.config.ts",
+      "tsconfig.json",
+      "postcss.config.js",
+      "tailwind.config.ts"
+    ]
+  },
+  "preserve": {
+    "copy": [
+      "Experimental astrodynamics, accelerated by AI.",
+      "AI-native mission design, simulation, and autonomy validation for the next generation of orbital operations.",
+      "AI proposes. Physics constrains. Simulation tests. Humans approve.",
+      "Not flight-certified without validation.",
+      "Decision support and validation infrastructure — not spacecraft control."
+    ],
+    "features": [
+      "Trajectory generation and maneuver optimization narrative",
+      "Uncertainty simulation and robustness scoring narrative",
+      "Autonomy validation positioning (validation harnesses, not flight control)",
+      "Use cases across cislunar, RPO, OD, formation flying, small-body, defense"
+    ],
+    "components": [
+      "Orbital diagram visual style and glass-panel layout system (as a site signature)"
+    ],
+    "assets": [],
+    "technical_decisions": [
+      "No database/auth/api routes for MVP",
+      "pnpm only",
+      "Vercel manual deployment only"
+    ]
+  },
+  "do_not": {
+    "delete": [
+      "src/**",
+      "AUTOBUILDER_FOUNDATION.json",
+      ".autobuilder/**",
+      "RECOVERY_NOTES.md",
+      "pnpm-lock.yaml",
+      "package.json",
+      "next.config.ts",
+      "tsconfig.json",
+      "tailwind.config.ts",
+      "postcss.config.js",
+      ".gitignore"
+    ],
+    "expose_publicly": [
+      "Internal Autobuilder strategy details that could leak proprietary process",
+      "Any customer/pilot names or mission specifics",
+      "Any sensitive security/deployment notes for future defense/enterprise work"
+    ],
+    "change_without_reason": [
+      "Core product truth and validation disclaimers",
+      "The primary headline/subheadline positioning",
+      "pnpm-only constraint and manual deploy guidance"
+    ],
+    "build": [
+      "Database-backed product features without explicit need",
+      "Auth flows before there is a clear product surface",
+      "Generic AI SaaS funnel pages",
+      "Claims of spacecraft control or flight certification"
+    ],
+    "drift_toward": [
+      "Astrology or pseudo-science",
+      "A space game",
+      "A generic space blog",
+      "Generic \"AI for everything\" messaging"
+    ]
+  },
+  "autobuilder_strategy": {
+    "north_star": "A trusted mission decision engine: faster iteration with physics-constrained proposals, uncertainty-tested robustness evidence, and human-approvable outputs.",
+    "quality_bar": "Investor-grade design; technically credible copy; strict truthfulness; fast, responsive Next.js build; minimal deps; durable state files for future iteration.",
+    "next_priorities": [
+      "Validate build and keep it green",
+      "Add an interactive mission sandbox (lightweight, client-only)",
+      "Add structured content/data files to keep copy modular",
+      "Add pilot request and investor pages",
+      "Improve SEO (OpenGraph, sitemap/robots as needed)"
+    ],
+    "safe_improvement_types": [
+      "Copy refinement without changing product truth",
+      "Layout/typography polish",
+      "Performance improvements (bundle size, font loading, image policy)",
+      "Adding new sections that strengthen technical credibility",
+      "Adding small interactive visuals that do not imply spacecraft control"
+    ],
+    "unsafe_improvement_types": [
+      "Introducing unsupported operational claims",
+      "Adding heavy dependencies or complex state without need",
+      "Adding auth/DB/API prematurely",
+      "Changing the core positioning into generic SaaS"
+    ],
+    "preferred_task_size": "medium",
+    "build_frequency_guidance": "Run pnpm typecheck and pnpm build after meaningful UI/content changes; keep the baseline always deployable.",
+    "deployment_guidance": "manual_vercel_only"
+  },
+  "cleanup_policy": {
+    "safe_to_delete": [
+      "node_modules",
+      ".next",
+      ".turbo",
+      ".vercel/cache",
+      "dist",
+      "build",
+      "out",
+      "coverage",
+      "playwright-report",
+      "test-results",
+      ".cache",
+      ".parcel-cache",
+      ".DS_Store",
+      "*.log",
+      "npm-debug.log*",
+      "pnpm-debug.log*",
+      "yarn-debug.log*"
+    ],
+    "must_preserve": [
+      "src",
+      "public used assets",
+      "package.json",
+      "pnpm-lock.yaml",
+      "tsconfig.json",
+      "next.config.ts",
+      "tailwind.config.ts",
+      "postcss.config.js",
+      "README.md",
+      "RECOVERY_NOTES.md",
+      "AUTOBUILDER_FOUNDATION.json",
+      ".autobuilder",
+      ".gitignore",
+      ".env.example",
+      ".env.local"
+    ],
+    "large_file_review_paths": ["public", "src", "content", "data", "docs", ".autobuilder"],
+    "post_build_cleanup_commands": [
+      "rm -rf node_modules .next .turbo .vercel/cache dist build coverage playwright-report test-results .cache .parcel-cache",
+      "find . -name \".DS_Store\" -type f -delete",
+      "find . -name \"*.log\" -type f -delete",
+      "find . -name \"npm-debug.log*\" -type f -delete",
+      "find . -name \"pnpm-debug.log*\" -type f -delete",
+      "find . -name \"yarn-debug.log*\" -type f -delete",
+      "find . -type d -empty -delete"
+    ]
+  },
+  "last_recovery_summary": {
+    "date": "2026-05-11",
+    "restored": ["Next.js App Router + TS + Tailwind baseline"],
+    "improved": [
+      "Premium investor-grade homepage with required positioning and guardrails",
+      "SEO metadata (title/description/keywords)",
+      "Autobuilder foundation/state artifacts for durable iteration"
+    ],
+    "fixed": ["Aligned PostCSS config to required filename (postcss.config.js)"],
+    "removed": ["postcss.config.mjs"],
+    "remaining_risks": [
+      "Pilot contact email is a placeholder; replace with a real channel when available",
+      "No OpenGraph image yet; add when branding assets are ready"
+    ]
+  }
