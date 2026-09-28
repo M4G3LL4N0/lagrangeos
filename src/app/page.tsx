@@ -1,13 +1,38 @@
 import type { ReactNode } from "react";
+import { PremiumHeroVisual } from "@/components/premium/PremiumHeroVisual";
+import { ProductHonestyNote } from "@/components/ProductHonestyNote";
 import { MarketingGraphicsStack } from "@/components/MarketingGraphicsStack";
 import { ProcessFlowSection } from "@/components/ProcessFlowSection";
 import { HeroProductPanel } from "@/components/HeroProductPanel";
-import { TrustStrip } from "@/components/TrustStrip";
 import { SiteHeader } from "@/components/site-header";
+import { KissHero } from "@/components/KissHero";
+import { ExpertCouncilUpgrade } from "@/components/ExpertCouncilUpgrade";
+import { FounderControlStrip } from "@/components/FounderControlStrip";
+import { ExpansionOSPanel } from "@/components/ExpansionOSPanel";
+import { TrillionXV3ReadinessStrip } from "@/components/TrillionXV3ReadinessStrip";
+import { DistinctVentureHero } from "@/components/visual/DistinctVentureHero";
+import { DomainCommandGraphic } from "@/components/visual/DomainCommandGraphic";
+import { HeroGraphicPanel } from "@/components/visual/HeroGraphicPanel";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1">
+    <div className="venture-shell venture-shell--arctic-data px-4 sm:px-6 lg:px-8">
+      <DistinctVentureHero
+        ventureId="lagrangeos"
+        displayName="Lagrangeos"
+        worldId="arctic-data"
+        heroLayout="observatory"
+        headline={undefined}
+        subheadline={undefined}
+        
+        graphic={<HeroGraphicPanel worldId="arctic-data" labels={["Lagrangeos Signal","User Wedge","Launch Plan"]} />}
+      />
+      <DomainCommandGraphic ventureId="lagrangeos" worldId="arctic-data" labels={["Lagrangeos Signal","User Wedge","Launch Plan","Approval Gate","Build Status","Next Action"]} />
+      <FounderControlStrip />
+      <TrillionXV3ReadinessStrip buildStatus="PASS" />
+      <ExpertCouncilUpgrade />
+      <ExpansionOSPanel />
+
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className="absolute -top-32 left-1/2 h-[520px] w-[880px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(48,213,255,0.18),rgba(0,0,0,0)_60%)] blur-2xl" />
         <div className="absolute top-[20vh] -left-40 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.16),rgba(0,0,0,0)_62%)] blur-2xl" />
@@ -19,14 +44,10 @@ export default function Home() {
       <SiteHeader />
 
       <main id="top" className="relative z-10 flex-1">
-        <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
-          <TrustStrip />
-        </div>
-
-        <section className="mx-auto w-full max-w-6xl px-5 pt-16 pb-10 md:px-8 md:pt-24">
-          <div className="grid items-start gap-10 md:grid-cols-[1.15fr_0.85fr] md:gap-12">
+<section className="mx-auto w-full max-w-6xl px-5 pt-16 pb-10 md:px-8 md:pt-24 px-4 sm:px-6 lg:px-8" data-reveal>
+          <div data-stagger className="grid items-start gap-10 md:grid-cols-[1.15fr_0.85fr] md:gap-12">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300">
+              <div data-stagger className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300">
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(48,213,255,0.45)]" />
                 AI-native astrodynamics and autonomy infrastructure
               </div>
@@ -39,7 +60,7 @@ export default function Home() {
                 the next generation of orbital operations.
               </p>
 
-              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <div data-stagger className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <a
                   href="#cta"
                   className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-black hover:bg-zinc-100"
@@ -54,8 +75,8 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="mt-7 grid gap-3 text-sm text-zinc-300 md:grid-cols-2">
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div data-stagger className="mt-7 grid gap-3 text-sm text-zinc-300 md:grid-cols-2">
+                <div className="motion-card motion-hover-lift rounded-2xl border border-white/10 bg-white/5 p-4">
                   <div className="text-xs uppercase tracking-wider text-zinc-400">
                     Physics-first AI
                   </div>
@@ -64,7 +85,7 @@ export default function Home() {
                     determination intelligence.
                   </div>
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="motion-card motion-hover-lift rounded-2xl border border-white/10 bg-white/5 p-4">
                   <div className="text-xs uppercase tracking-wider text-zinc-400">
                     Decision intelligence
                   </div>
@@ -91,12 +112,12 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="mt-4 rounded-2xl border border-white/10 bg-black/30 p-4">
+              <div className="motion-card motion-hover-lift mt-4 rounded-2xl border border-white/10 bg-black/30 p-4">
                 <OrbitalDiagram />
               </div>
 
               <div className="mt-4 grid gap-3">
-                <div className="flex items-start justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="motion-card motion-hover-lift flex items-start justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
                   <div>
                     <div className="text-xs uppercase tracking-wider text-zinc-400">
                       Candidate transfers
@@ -109,7 +130,7 @@ export default function Home() {
                     ranked
                   </span>
                 </div>
-                <div className="flex items-start justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="motion-card motion-hover-lift flex items-start justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
                   <div>
                     <div className="text-xs uppercase tracking-wider text-zinc-400">
                       Uncertainty simulation
@@ -122,7 +143,7 @@ export default function Home() {
                     stress-test
                   </span>
                 </div>
-                <div className="flex items-start justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="motion-card motion-hover-lift flex items-start justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
                   <div>
                     <div className="text-xs uppercase tracking-wider text-zinc-400">
                       Autonomy validation
@@ -140,17 +161,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-6xl px-5 py-6 md:px-8">
+        <section className="mx-auto w-full max-w-6xl px-5 py-6 md:px-8 px-4 sm:px-6 lg:px-8" data-reveal>
           <div className="grid gap-3 md:grid-cols-4">
             <Stat
               label="Trajectory candidates"
-              value="10–10,000+"
-              detail="generated under mission constraints"
+              value="families"
+              detail="Design target: constraint-bounded transfer sets — not a published throughput metric"
             />
             <Stat
               label="Trade study time"
-              value="days → hours"
-              detail="ranked maneuvers + uncertainty tests"
+              value="shorter loops"
+              detail="Goal: ranked maneuvers + uncertainty tests in one sitting, not a claimed SLA"
             />
             <Stat
               label="Outputs"
@@ -167,8 +188,8 @@ export default function Home() {
 
         <section
           id="problem"
-          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8"
-        >
+          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 px-4 sm:px-6 lg:px-8"
+         data-reveal>
           <div className="grid gap-10 md:grid-cols-2 md:items-start">
             <div>
               <h2 className="text-2xl font-semibold tracking-tight text-zinc-50 md:text-3xl">
@@ -218,7 +239,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-6xl px-5 pb-4 md:px-8">
+        <section className="mx-auto w-full max-w-6xl px-5 pb-4 md:px-8 px-4 sm:px-6 lg:px-8" data-reveal>
           <div className="rounded-3xl border border-white/10 bg-[linear-gradient(135deg,rgba(48,213,255,0.10),rgba(139,92,246,0.08),rgba(255,213,74,0.06))] p-6 md:p-8">
             <div className="grid gap-10 md:grid-cols-[0.95fr_1.05fr] md:items-center">
               <div>
@@ -258,8 +279,8 @@ export default function Home() {
 
         <section
           id="platform"
-          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8"
-        >
+          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 px-4 sm:px-6 lg:px-8"
+         data-reveal>
           <div className="flex items-end justify-between gap-6">
             <div>
               <div className="text-xs uppercase tracking-wider text-zinc-400">
@@ -325,8 +346,8 @@ export default function Home() {
 
         <section
           id="use-cases"
-          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8"
-        >
+          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 px-4 sm:px-6 lg:px-8"
+         data-reveal>
           <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:items-start">
             <div>
               <div className="text-xs uppercase tracking-wider text-zinc-400">
@@ -357,8 +378,8 @@ export default function Home() {
 
         <section
           id="workflow"
-          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8"
-        >
+          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 px-4 sm:px-6 lg:px-8"
+         data-reveal>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
             <div className="grid gap-8 md:grid-cols-[0.95fr_1.05fr] md:items-start">
               <div>
@@ -404,8 +425,8 @@ export default function Home() {
 
         <section
           id="demo"
-          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8"
-        >
+          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 px-4 sm:px-6 lg:px-8"
+         data-reveal>
           <div className="grid gap-10 md:grid-cols-[1.05fr_0.95fr] md:items-start">
             <div className="rounded-3xl border border-white/10 bg-black/25 p-6">
               <div className="flex items-center justify-between">
@@ -413,10 +434,10 @@ export default function Home() {
                   Product demo (concept)
                 </div>
                 <div className="text-[11px] text-zinc-400">
-                  no flight-control claims
+                  sample ranking · not flight control
                 </div>
               </div>
-              <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-5">
+              <div className="motion-card motion-hover-lift mt-4 rounded-2xl border border-white/10 bg-white/5 p-5">
                 <div className="text-xs uppercase tracking-wider text-zinc-400">
                   Output: maneuver strategy ranking
                 </div>
@@ -469,7 +490,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8">
+        <section className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 px-4 sm:px-6 lg:px-8" data-reveal>
           <div className="grid gap-10 md:grid-cols-2">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
               <div className="text-xs uppercase tracking-wider text-zinc-400">
@@ -522,8 +543,8 @@ export default function Home() {
 
         <section
           id="roadmap"
-          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8"
-        >
+          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 px-4 sm:px-6 lg:px-8"
+         data-reveal>
           <div className="flex items-end justify-between gap-6">
             <div>
               <div className="text-xs uppercase tracking-wider text-zinc-400">
@@ -565,8 +586,8 @@ export default function Home() {
 
         <section
           id="cta"
-          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8"
-        >
+          className="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 px-4 sm:px-6 lg:px-8"
+         data-reveal>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-10">
             <div className="grid gap-10 md:grid-cols-[1.05fr_0.95fr] md:items-center">
               <div>
@@ -607,13 +628,20 @@ export default function Home() {
             </div>
           </div>
         </section>
-      <section className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6"><HeroProductPanel /></section>
+      <section className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6" data-reveal>
+        <HeroProductPanel />
+      </section>
       <ProcessFlowSection />
-      <MarketingGraphicsStack />
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+        <PremiumHeroVisual />
+      </div>
+        {/* replaced by DomainCommandGraphic */}
+    
+      <ProductHonestyNote status="demo" />
     </main>
 
       <footer className="relative z-10 border-t border-white/10 bg-black/20">
-        <div className="mx-auto w-full max-w-6xl px-5 py-10 md:px-8">
+        <div className="mx-auto w-full max-w-6xl px-5 py-10 md:px-8 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
             <div>
               <div className="text-sm font-semibold text-zinc-50">
@@ -678,7 +706,7 @@ function Stat({
 
 function CardLine({ title, body }: { title: string; body: string }) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+    <div className="motion-card motion-hover-lift rounded-2xl border border-white/10 bg-black/20 p-4">
       <div className="text-sm font-semibold text-zinc-100">{title}</div>
       <div className="mt-1 text-sm leading-6 text-zinc-300">{body}</div>
     </div>
@@ -687,7 +715,7 @@ function CardLine({ title, body }: { title: string; body: string }) {
 
 function Mini({ title, body }: { title: string; body: string }) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+    <div className="motion-card motion-hover-lift rounded-2xl border border-white/10 bg-black/20 p-4">
       <div className="text-sm font-semibold text-zinc-100">{title}</div>
       <div className="mt-1 text-sm leading-6 text-zinc-300">{body}</div>
     </div>
@@ -718,7 +746,7 @@ function Feature({
 
 function Pill({ children }: { children: ReactNode }) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-zinc-200">
+    <div className="motion-card motion-hover-lift rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-zinc-200">
       {children}
     </div>
   );
@@ -750,7 +778,7 @@ function RankingRow({
   meta: string;
 }) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+    <div className="motion-card motion-hover-lift rounded-2xl border border-white/10 bg-black/20 p-4">
       <div className="flex items-start justify-between gap-4">
         <div className="text-sm font-semibold text-zinc-100">{name}</div>
         <div className="rounded-full bg-white/5 px-2 py-1 text-xs text-zinc-200">
