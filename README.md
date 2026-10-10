@@ -1,172 +1,95 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/hero-reduced.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero/hero-light.svg">
-    <img src="assets/hero/hero-motion.svg" alt="LagrangeOS — animated project plate showing policy &rarr; control &rarr; evidence. Motion depicts this project's real state transition." width="100%">
-  </picture>
-</p>
+# lagrangeos
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/computational-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero/computational-light.svg">
-    <img src="assets/hero/computational-motion.svg" alt="State machine: policy &rarr; control &rarr; evidence." width="100%">
-  </picture>
-</p>
+> Space infrastructure software for orbital operations and mission planning. Built in TypeScript on Next.js. 15 routes (/about, /contact, /dashboard); 1 entry point (index.html). PROTOTYPE. No test suite committed.
 
-## LagrangeOS
+The implementation summary below is intentionally conservative. Claims from NORTHSTAR are not presented as shipped functionality.
 
-**Experimental astrodynamics, accelerated by AI.**
+- [GitHub repository](https://github.com/M4G3LL4N0/lagrangeos)
+- [Project site](https://lagrangeos.vercel.app/)
 
-LagrangeOS is an AI-native experimental astrodynamics and space autonomy infrastructure startup. It helps mission teams design trajectories, simulate uncertainty, validate autonomy logic, rank maneuver strategies, and export orbital decision intelligence.
+<!-- NOAERTH_IMAGE_SLOT: lagrangeos/hero -->
 
-## Getting Started
+## What it is
 
-This repo uses **pnpm only**.
+Space infrastructure software for orbital operations and mission planning. Built in TypeScript on Next.js. 15 routes (/about, /contact, /dashboard); 1 entry point (index.html). PROTOTYPE. No test suite committed.
 
-```bash
-pnpm dev
-```
+This repository is part of the NOAERTH venture ecosystem. The current public-facing evidence identifies it as a prototype / active development rather than a production-ready system.
 
-Open `http://localhost:3000`.
+## Capabilities
 
-## Commands
+### Available evidence
 
-```bash
+- The repository contains the implementation and documentation associated with the project description above.
+- The technology signals currently visible in the local project are listed in the technical notes below.
+- No additional capability is asserted here without a direct implementation reference.
+
+### Experimental or planned
+
+Roadmap intent is deliberately not represented as shipped functionality. Review NORTHSTAR and source implementation together before adding future-facing claims.
+
+<!-- NOAERTH_IMAGE_SLOT: lagrangeos/workflow -->
+
+## How it works
+
+The current evidence supports a repository-level application or tool workflow, but does not provide enough verified detail in the Part 1 record to publish a component-level architecture diagram. The architecture slot is reserved for a deterministic diagram after the source flow is reviewed.
+
+<!-- NOAERTH_IMAGE_SLOT: lagrangeos/architecture -->
+
+## Quick start
+
+### Prerequisites
+
+- A runtime suitable for `Node.js`.
+- A clean checkout of this repository.
+
+### Install
+
+```sh
 pnpm install
-pnpm typecheck
-pnpm build
-pnpm dev
 ```
 
-## Manual deploy (Vercel)
+### Run locally
 
-Do not deploy automatically from this repo. Manual deployment only.
-
-```bash
-cd /Users/joshuadavis/startups/lagrangeos
-pnpm install
-pnpm build
-vercel --prod
+```sh
+pnpm run dev
 ```
 
-## Product truth
+### Build
 
-LagrangeOS is decision support and validation infrastructure — **not spacecraft control software**. Not flight-certified without independent validation.
+```sh
+pnpm run build
+```
 
-## Autobuilder foundation
+Commands are included only when they were detected in the repository manifest; verify environment-specific requirements before deployment.
 
-Autobuilder state and guardrails live in:
+## Technical notes
 
-- `AUTOBUILDER_FOUNDATION.json`
-- `.autobuilder/project-state.json`
-- `.autobuilder/next-actions.json`
-- `.autobuilder/guardrails.md`
+- **Primary language:** JavaScript/TypeScript
+- **Runtime:** Node.js
+- **Package manager:** pnpm
+- **Framework and integration signals:** Go, Rust
+- **Entry-point signals:** package.json
+- **Test evidence:** TEST_PLAN.md
+- **Repository topics:** `react`, `typescript`, `app`, `components`, `dung30n5`, `next-js`, `noaerth`, `prototype`
 
-<!-- TRILLIONX:presentation:begin -->
+## Status and roadmap
 
-### Animated surfaces
+**Current status:** Prototype / active development.
 
-Generated from this repository's own source tree: every count, route and module below was measured, not written by hand.
+**Current:** The repository and its documented implementation are available for inspection.
 
-#### Identity
+**Next:** Reconcile the README, source behavior, and safe public product language before adding deeper examples or diagrams.
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/hero-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/hero-light.svg">
-  <img alt="Identity diagram for lagrangeos" src="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/hero-motion.svg">
-</picture>
+**Future:** Product direction is maintained separately and must not be read as a shipped feature list.
 
-#### Entry points
+## Contributing and license
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/terminal-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/terminal-light.svg">
-  <img alt="Entry points diagram for lagrangeos" src="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/terminal-motion.svg">
-</picture>
+Follow the repository's existing contribution and licensing files where present. This README does not invent an open-source license or contribution policy.
 
-#### Modules
+## Visual documentation
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/architecture-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/architecture-light.svg">
-  <img alt="Modules diagram for lagrangeos" src="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/architecture-motion.svg">
-</picture>
+Image slots are intentionally comments until authentic screenshots, deterministic diagrams, or approved conceptual visuals exist. No absent image file is referenced.
 
-#### Routes
+## NOAERTH
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/data_flow-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/data_flow-light.svg">
-  <img alt="Routes diagram for lagrangeos" src="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/data_flow-motion.svg">
-</picture>
-
-#### Primitives
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/state_machine-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/state_machine-light.svg">
-  <img alt="Primitives diagram for lagrangeos" src="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/state_machine-motion.svg">
-</picture>
-
-#### Composition
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/component_map-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/component_map-light.svg">
-  <img alt="Composition diagram for lagrangeos" src="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/component_map-motion.svg">
-</picture>
-
-#### Build and tests
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/build-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/build-light.svg">
-  <img alt="Build and tests diagram for lagrangeos" src="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/build-motion.svg">
-</picture>
-
-#### Workflow
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/workflow-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/workflow-light.svg">
-  <img alt="Workflow diagram for lagrangeos" src="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/workflow-motion.svg">
-</picture>
-
-#### Domain
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/domain-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/domain-light.svg">
-  <img alt="Domain diagram for lagrangeos" src="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/domain-motion.svg">
-</picture>
-
-#### Identity object
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/footer-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/footer-light.svg">
-  <img alt="Identity object diagram for lagrangeos" src="https://raw.githubusercontent.com/M4G3LL4N0/lagrangeos/main/.github-art/surfaces/footer-motion.svg">
-</picture>
-
-<!-- TRILLIONX:presentation:end -->
-
-<!-- TRILLIONX:evidence:begin -->
-
-## What is measurable here
-
-Generated by `.github-art` from the source tree at publish time.
-
-| Signal | Value |
-| --- | --- |
-| HTTP routes | 15 |
-| Entry points | 1 |
-| Module roots | 3 |
-| Test files | 0 |
-| CI workflows | 0 |
-| Distinctive stack | scaffold only |
-| Status | PROTOTYPE |
-| Evidence confidence | E3 |
-| Animated surfaces | 10 |
-
-<!-- TRILLIONX:evidence:end -->
+[NOAERTH](https://www.noaerth.com) is the venture ecosystem associated with this project.
